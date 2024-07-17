@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>HTML FORMS</title>
+  <!-- Bootstrap CSS link -->
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f0f0f0;
+      margin: 20px;
+      padding: 20px;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <form>
+      <h1>Personal Details</h1>
+      <div class="form-group">
+        <label for="first-name">First name</label>
+        <input type="text" class="form-control" id="first-name" name="fn"  autofocus>
+      </div>
+      <div class="form-group">
+        <label for="last-name">Last name</label>
+        <input type="text" class="form-control" id="last-name" name="ln" >
+      </div>
+      <div class="form-group">
+        <label>Gender</label><br>
+        <div class="form-check form-check-inline">
+          <input class="form-check-input" type="radio" name="gender" id="male" value="male">
+          <label class="form-check-label" for="male">Male</label>
+        </div>
+        <div class="form-check form-check-inline">
+          <input class="form-check-input" type="radio" name="gender" id="female" value="female">
+          <label class="form-check-label" for="female">Female</label>
+        </div>
+      </div>
+      <div class="form-group">
+        <label>Hobbies</label><br>
+        <div class="form-check">
+          <input class="form-check-input" type="checkbox" id="editing" name="hobbies[]" value="editing">
+          <label class="form-check-label" for="editing">Editing</label>
+        </div>
+        <div class="form-check">
+          <input class="form-check-input" type="checkbox" id="reading" name="hobbies[]" value="reading">
+          <label class="form-check-label" for="reading">Reading</label>
+        </div>
+        <div class="form-check">
+          <input class="form-check-input" type="checkbox" id="writing" name="hobbies[]" value="writing">
+          <label class="form-check-label" for="writing">Writing</label>
+        </div>
+      </div>
+      <div class="form-group">
+        <label for="email">Email</label>
+        <input type="email" class="form-control" id="email" name="email">
+      </div>
+      <div class="form-group">
+        <label for="phone">Phone number</label>
+        <input type="text" class="form-control" id="phone" name="phone" maxlength="10">
+      </div>
+      <div class="form-group">
+        <label for="college">Choose college</label>
+        <select class="form-control" id="college" name="college" multiple size="3">
+          <option>KEC</option>
+          <option>BIT</option>
+          <option>VIT</option>
+          <option>VECT</option>
+        </select>
+      </div>
+      <button type="submit" class="btn btn-primary">Submit</button>
+    </form>
+  </div>
+
+  <!-- Bootstrap JS (optional, for interactive components) -->
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
